@@ -24,8 +24,9 @@ Then install dependencies and check to see it works
 
 ```bash
 $ npm install                   # Install project dependencies
-$ npm run build-dev             # Compile and launch in dev mode
-$ npm run build-prod            # Compile project assets and all
+$ npm run build-dev             # Compile and build assets and all in dev mode
+$ npm run build-prod            # Compile and build assets and all in prod mode
+$ npm start                     # Starts the server and launch app
 ```
 
 ## Application Structure
