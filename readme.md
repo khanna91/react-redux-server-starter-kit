@@ -1,4 +1,4 @@
-React Server Side Rendering With Redux - Boilerplate
+React Redux Server Starter Kit
 =========
 
 This starter kit is designed to get you up and running with a bunch of awesome new front-end technologies, all on top of a configurable, feature-rich webpack build system that's already setup to provide hot reloading, CSS preprocessing with Sass, unit testing, code coverage reports, bundle splitting, and more.
@@ -9,7 +9,7 @@ This starter kit is designed to get you up and running with a bunch of awesome n
 
 ## Getting Started
 
-After confirming that your development environment meets the specified [requirements](#requirements), you can create a new project based on `react-server-boilerplate` in one of two ways:
+After confirming that your development environment meets the specified [requirements](#requirements), you can create a new project based on `react-redux-server-starter-kit` in one of two ways:
 
 ### Install from source
 
