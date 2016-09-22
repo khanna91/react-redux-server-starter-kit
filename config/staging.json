@@ -1,0 +1,27 @@
+{
+  "host": {
+    "url": "https://stg.ofbusiness.in"
+  },
+  "api": {
+    "url": "http://52.76.50.34:7000",
+    "browserUrl": "http://stg-api.ofbusiness.in"
+  },
+  "blog": {
+    "url": "http://blog.ofbusiness.com"
+  },
+  "contactNumber": "9876543210",
+  "showLaunchMSite": false,
+  "gulp": {
+    "browserifyWatch": false
+  },
+  "port": 9000,
+  "mport": 7000,
+  "twakToId": "57776f267e2a21a6385ea21e",
+  "gtmTrackerId": "GTM-TP9VN9",
+  "adZoneId":"1",
+  "cdnUrl":"http://stg.ofbusiness.in",
+  "cdnImgUrl": "https://d5nfy7n2jvqm2.cloudfront.net",
+  "compress-img" : false,
+  "strip-logs": false,
+  "facebookAppId":"837906952988309"
+}

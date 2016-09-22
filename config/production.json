@@ -1,0 +1,27 @@
+{
+  "host": {
+    "url": "https://www.ofbusiness.com"
+  },
+  "api": {
+    "url": "http://10.0.19.150:7000",
+    "browserUrl": "https://api.ofbusiness.in"
+  },
+  "blog": {
+    "url": "http://blog.ofbusiness.com"
+  },
+  "contactNumber": "9876543210",
+  "showLaunchMSite": true,
+  "gulp": {
+    "browserifyWatch": false
+  },
+  "port": 80,
+  "mport": 81,
+  "twakToId": "562b2f4b580f6439664dfefd",
+  "gtmTrackerId": "GTM-KMH5X3",
+  "adZoneId":"1",
+  "cdnUrl":"https://d1i3lb20gokj31.cloudfront.net",
+  "cdnImgUrl": "https://d5nfy7n2jvqm2.cloudfront.net",
+  "compress-img" : true,
+  "strip-logs": true,
+  "facebookAppId":"837906052988399"
+}
