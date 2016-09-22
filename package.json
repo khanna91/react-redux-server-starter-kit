@@ -7,7 +7,7 @@
     "watch:css": "onchange \"src/theme\" -- npm run build:css",
     "watch:js": "onchange \"src/pages/**/*.js\" -- npm run build:local-js",
     "watch:all": "concurrently --kill-others 'npm run watch:js' 'npm run watch:css'",
-    "clean": "rm -r public/*",
+    "clean": "rm -rf public/*",
     "fonts": "cp -r static/fonts public/fonts",
     "autoprefixer": "postcss -u autoprefixer -r public/stylesheets/*",
     "build:vendor-css": "node-sass --output-style compressed -o public/stylesheets static/vendor.scss",
