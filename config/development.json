@@ -8,6 +8,6 @@
     },
     "port": 3002,
     "cdnUrl": "http://localhost:9000",
-    "cdnImgUrl": "https://d5nfy7n2jvqm2.cloudfront.net",
+    "cdnImgUrl": "https://localhost:9000",
     "strip-logs": false
 }
