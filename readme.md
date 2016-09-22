@@ -16,7 +16,7 @@ After confirming that your development environment meets the specified [requirem
 First, clone the project:
 
 ```bash
-$ git clone https://github.com/khanna91/react-server-boilerplate <my-project-name>
+$ git clone https://github.com/khanna91/react-redux-server-starter-kit <my-project-name>
 $ cd <my-project-name>
 ```
 
