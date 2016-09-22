@@ -4,9 +4,6 @@ var webpack = require("webpack");
 var path = require('path');
 var fs = require('fs');
 
-var Dashboard = require('webpack-dashboard');
-var DashboardPlugin = require('webpack-dashboard/plugin');
-
 var statsFormat = {
     //context: false,
     hash: false,
