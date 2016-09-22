@@ -20,7 +20,7 @@
     "build:local-webpacker": "gulp local-webpacker",
     "build:prod-webpacker": "gulp prod-webpacker",
     "prebuild": "mkdirp public/javascripts/client",
-    "build:all": "npm run clean && npm run prebuild && npm run fonts && npm run build:vendor-css && npm run build:css && npm run build:images && npm run build:vendor-js",
+    "build:all": "npm run clean && npm run prebuild && npm run build:vendor-css && npm run build:css && npm run build:images && npm run build:vendor-js",
     "build-dev": "npm run build:all && npm run build:local-js && npm run watch:all",
     "build-prod": "npm run build:all && npm run build:prod-js"
   },
