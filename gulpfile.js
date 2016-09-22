@@ -1,7 +1,7 @@
 var dest = './public',
-    src = './src',
-    views = 'views',
-    temp = './temp';
+src = './src',
+views = 'views',
+temp = './temp';
 
 var gulp = require('gulp');
 var fs = require('fs');

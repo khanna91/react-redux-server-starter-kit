@@ -34,26 +34,26 @@ module.exports = function (webpackConfig) {
             const compiler = webpack(webpackConfig);
 
             compiler.run((err, stats) => {
-              if (err) {
-                gutil.log('Webpack compiler encountered a fatal error.', err)
-                return reject(err)
-              }
+                if (err) {
+                    gutil.log('Webpack compiler encountered a fatal error.', err)
+                    return reject(err)
+                }
 
-              const jsonStats = stats.toJson()
-              gutil.log('Webpack compile completed.')
-              gutil.log(stats.toString(statsFormat))
+                const jsonStats = stats.toJson()
+                gutil.log('Webpack compile completed.')
+                gutil.log(stats.toString(statsFormat))
 
-              if (jsonStats.errors.length > 0) {
-                gutil.log('Webpack compiler encountered errors.')
-                gutil.log(jsonStats.errors.join('\n'))
-                return reject(new Error('Webpack compiler encountered errors'))
-              } else if (jsonStats.warnings.length > 0) {
-                gutil.log('Webpack compiler encountered warnings.')
-                gutil.log(jsonStats.warnings.join('\n'))
-              } else {
-                gutil.log('No errors or warnings encountered.')
-              }
-              resolve(jsonStats)
+                if (jsonStats.errors.length > 0) {
+                    gutil.log('Webpack compiler encountered errors.')
+                    gutil.log(jsonStats.errors.join('\n'))
+                    return reject(new Error('Webpack compiler encountered errors'))
+                } else if (jsonStats.warnings.length > 0) {
+                    gutil.log('Webpack compiler encountered warnings.')
+                    gutil.log(jsonStats.warnings.join('\n'))
+                } else {
+                    gutil.log('No errors or warnings encountered.')
+                }
+                resolve(jsonStats)
             })
         })
     };

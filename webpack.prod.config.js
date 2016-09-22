@@ -2,7 +2,7 @@ var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
 var dest = './public',
-    src = './src';
+src = './src';
 
 var envConfig = require('config');
 var WebpackStrip = require('strip-loader');
@@ -43,8 +43,8 @@ function getLoaders() {
         },
         {
             /**
-             * Replace ${apiUrl} in util.jsx file
-             */
+            * Replace ${apiUrl} in util.jsx file
+            */
             test: /util\.js[x]?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'string-replace',
@@ -55,8 +55,8 @@ function getLoaders() {
         },
         {
             /**
-             * Replace ${cdnUrl} in all jsx files
-             */
+            * Replace ${cdnUrl} in all jsx files
+            */
             test: /\.js[x]?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'string-replace',
@@ -67,26 +67,14 @@ function getLoaders() {
         },
         {
             /**
-             * Replace ${imgCdnUrl} in all jsx files
-             */
+            * Replace ${imgCdnUrl} in all jsx files
+            */
             test: /\.js[x]?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'string-replace',
             query: {
                 search: '${imgCdnUrl}',
                 replace: envConfig.get('cdnImgUrl')
-            }
-        },
-        {
-            /**
-             * Replace ${blogUrl} in util.jsx file
-             */
-            test: /util\.js[x]?$/,
-            exclude: /(node_modules|bower_components)/,
-            loader: 'string-replace',
-            query: {
-                search: '${blogUrl}',
-                replace: envConfig.get('blog.url')
             }
         }
     ];

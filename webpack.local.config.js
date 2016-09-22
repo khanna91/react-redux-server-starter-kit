@@ -5,14 +5,14 @@ var tap = require('gulp-tap');
 var webpack = require('webpack');
 
 var dest = './public',
-    src = './src';
+src = './src';
 
 var envConfig = require('config');
 
 module.exports = [
     {
         watch: true,
-        entry: {            
+        entry: {
         },
         output: {
             path: path.join(__dirname, dest, '/javascripts/client'),
@@ -31,8 +31,8 @@ module.exports = [
                 },
                 {
                     /**
-                     * Replace ${apiUrl} in util.jsx file
-                     */
+                    * Replace ${apiUrl} in util.jsx file
+                    */
                     test: /util\.js[x]?$/,
                     exclude: /(node_modules|bower_components)/,
                     loader: 'string-replace',
@@ -43,8 +43,8 @@ module.exports = [
                 },
                 {
                     /**
-                     * Replace ${cdnUrl} in all jsx files
-                     */
+                    * Replace ${cdnUrl} in all jsx files
+                    */
                     test: /\.js[x]?$/,
                     exclude: /(node_modules|bower_components)/,
                     loader: 'string-replace',
@@ -55,26 +55,14 @@ module.exports = [
                 },
                 {
                     /**
-                     * Replace ${imgCdnUrl} in all jsx files
-                     */
+                    * Replace ${imgCdnUrl} in all jsx files
+                    */
                     test: /\.js[x]?$/,
                     exclude: /(node_modules|bower_components)/,
                     loader: 'string-replace',
                     query: {
                         search: '${imgCdnUrl}',
                         replace: envConfig.get('cdnImgUrl')
-                    }
-                },
-                {
-                    /**
-                     * Replace ${blogUrl} in util.jsx file
-                     */
-                    test: /util\.js[x]?$/,
-                    exclude: /(node_modules|bower_components)/,
-                    loader: 'string-replace',
-                    query: {
-                        search: '${blogUrl}',
-                        replace: envConfig.get('blog.url')
                     }
                 }
             ]

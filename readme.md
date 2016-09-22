@@ -54,4 +54,10 @@ The application structure presented in this boilerplate is **fractal**, where fu
 └── webpack.config.js        # Webpack config file for local(dev) and production
 ```
 
+## Run Application locally
+
+```bash
+$ http://localhost:3002
+```
+
 ## Thank You

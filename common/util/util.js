@@ -52,7 +52,7 @@ module.exports = {
 
         for (var prop in obj) {
             if (obj.hasOwnProperty(prop))
-                return false;
+            return false;
         }
 
         return true;
@@ -118,11 +118,11 @@ module.exports = {
         });
     },
     /**
-     * Gets displayable errorText.
-     * @param error the response recieved
-     * @param defaultMessage the default error message to returned if the error is null or undefined
-     * @returns {*}
-     */
+    * Gets displayable errorText.
+    * @param error the response recieved
+    * @param defaultMessage the default error message to returned if the error is null or undefined
+    * @returns {*}
+    */
     getErrorMessage: function (error, defaultMessage) {
         defaultMessage = defaultMessage || 'Server is unavailable.';
         console.log(error);
@@ -199,9 +199,9 @@ module.exports = {
     isElementInViewport: function (el) {
         var rect = el.getBoundingClientRect();
         return rect.bottom > 0 &&
-            rect.right > 0 &&
-            rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
-            rect.top < (window.innerHeight || document.documentElement.clientHeight);
+        rect.right > 0 &&
+        rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+        rect.top < (window.innerHeight || document.documentElement.clientHeight);
     },
     sleep: function (time) {
         var stop = new Date().getTime();

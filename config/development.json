@@ -1,27 +1,13 @@
 {
-  "host": {
-    "url": "http://localhost:9000"
-  },
-  "api": {
-    "url": "http://localhost:8080",
-    "browserUrl": "http://localhost:8080"
-  },
-  "blog": {
-    "url": "http://blog.ofbusiness.com"
-  },
-  "contactNumber": "9876543210",
-  "showLaunchMSite": false,
-  "gulp": {
-    "browserifyWatch": true
-  },
-  "port": 9000,
-  "mport": 9001,
-  "twakToId": "57776f267e2a21a6385ea21e",
-  "gtmTrackerId": "GTM-TP9VN9",
-  "adZoneId": "1",
-  "cdnUrl": "http://localhost:9000",
-  "cdnImgUrl": "https://d5nfy7n2jvqm2.cloudfront.net",
-  "compress-img": false,
-  "strip-logs": false,
-  "facebookAppId": "837906952988309"
+    "host": {
+        "url": "http://localhost:3002"
+    },
+    "api": {
+        "url": "http://localhost:8080",
+        "browserUrl": "http://localhost:8080"
+    },
+    "port": 3002,
+    "cdnUrl": "http://localhost:9000",
+    "cdnImgUrl": "https://d5nfy7n2jvqm2.cloudfront.net",
+    "strip-logs": false
 }

@@ -4,7 +4,7 @@ import global from '../src/app-server.js';
 module.exports = function render(pageName, props) {
 
     return function (req, res, next) {
-        
+
         if (res.getProp('error') === true) {
             next();
             return;
